@@ -1,0 +1,131 @@
+.AboutUs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* background-color: tomato; */
+  background: rgb(149, 238, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(149, 238, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 39%
+  );
+}
+
+.AboutUs-inner-container {
+  width: 75%;
+  /* background-color: violet; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  padding: 50px 0px;
+}
+
+.AboutUs-left {
+  width: 80%;
+  /* background-color: yellow; */
+}
+
+.AboutUs-left h1 {
+  font-size: 4rem;
+  color: goldenrod;
+}
+
+.AboutUs-left p {
+  margin: 15px 0px;
+}
+
+.AboutUs-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* AboutUsCards.jsx css start */
+
+.AboutusCards-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutusCards-inner-container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: yellowgreen; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  padding: 30px 0px;
+}
+
+.Aboutus-left {
+  /* background-color: antiquewhite; */
+  width: 30%;
+}
+
+.Aboutus-left img {
+  width: 100%;
+  height: auto;
+}
+
+.Aboutus-right h1 {
+  /* margin-bottom: 20px; */
+  font-size: 2.5vw;
+  color: goldenrod;
+}
+
+.destination {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  color: tomato;
+}
+
+.destination-desc {
+  font-size: 1.2rem;
+}
+
+.Aboutus-right {
+  /* background-color: violet; */
+  width: 70%;
+  text-align: center;
+  padding: 30px 20px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  border: 2px solid rgb(0, 234, 255);
+}
+
+.Cards01 {
+  background-color: green;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 14%,
+    rgba(149, 238, 255, 1) 100%
+  );
+}
+
+.Cards01 h1 {
+  text-align: center;
+  font-size: 2.4vw;
+  color: goldenrod;
+}
+
+.Cards02 {
+  background: rgb(149, 238, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(149, 238, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 39%
+  );
+}

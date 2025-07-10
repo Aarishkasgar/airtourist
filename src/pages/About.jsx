@@ -48,7 +48,7 @@ const About = () => {
         </div>
         <div className="Cards01">
           <AboutUsCards
-            name="Aarish"
+            name="Aarish Developer"
             destination="Graphic Designer &amp; Web Developer"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
             vestibulum magna sed, convallis ex."

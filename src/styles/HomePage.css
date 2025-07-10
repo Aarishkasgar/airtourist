@@ -1,0 +1,308 @@
+/* src/styles/HomePage.css */
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1469854523021-f02ff857034c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: var(--white-color);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 900px;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+    color: var(--white-color);
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: var(--white-color);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore-btn {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.explore-btn:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* Services Overview */
+.services-overview-section {
+    background-color: var(--white-color);
+    padding: 80px 20px;
+}
+
+.services-overview-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.services-overview-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+.service-item {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+
+/* Destinations Overview */
+.destinations-overview-section {
+    background-color: var(--light-bg);
+    padding: 80px 20px;
+}
+
+.destinations-overview-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.destinations-overview-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+.destination-card {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    text-align: left;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.05);
+}
+
+.destination-card .card-content {
+    padding: 25px;
+}
+
+.destination-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: var(--dark-bg);
+}
+
+.destination-card p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.destination-card button {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+.destination-card button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Testimonials Overview */
+.testimonials-overview-section {
+    background-color: var(--white-color);
+    padding: 80px 20px;
+}
+
+.testimonials-overview-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.testimonials-overview-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+/* Animations specific to sections */
+.hero-section.fade-in .hero-content h1,
+.hero-section.fade-in .hero-content p,
+.hero-section.fade-in .hero-content .explore-btn {
+    animation: slideInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.hero-section.fade-in .hero-content h1 { animation-delay: 0.1s; }
+.hero-section.fade-in .hero-content p { animation-delay: 0.3s; }
+.hero-section.fade-in .hero-content .explore-btn { animation-delay: 0.5s; }
+
+.services-overview-section.slide-in-up .services-grid,
+.destinations-overview-section.slide-in-up .destinations-grid,
+.testimonials-overview-section.slide-in-up .testimonials-grid {
+    animation: slideInUp 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s; /* Delay the grid animation slightly */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+    .services-overview-section h2, .destinations-overview-section h2, .testimonials-overview-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .explore-btn {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+    .services-overview-section h2, .destinations-overview-section h2, .testimonials-overview-section h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .service-item h3 {
+        font-size: 1.5rem;
+    }
+    .destination-card h3 {
+        font-size: 1.5rem;
+    }
+}

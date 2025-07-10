@@ -1,0 +1,187 @@
+/* src/styles/Header.css */
+.header {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+    position: relative; /* For dropdown */
+}
+
+.nav ul li a, .nav ul li .dropdown-toggle {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color var(--transition-speed) ease;
+    cursor: pointer;
+    padding: 5px 0; /* To make clickable area larger */
+    display: block;
+}
+
+.nav ul li a:hover, .nav ul li .dropdown-toggle:hover {
+    color: var(--primary-color);
+}
+
+/* Dropdown specific styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    min-width: 150px;
+    padding: 10px 0;
+    z-index: 1001;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    white-space: nowrap; /* Prevent breaking into multiple lines */
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--light-bg);
+}
+
+
+.book-now-btn {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.book-now-btn:hover {
+    background-color: #e0a800;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other elements */
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: var(--text-color);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Styles for Header */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    }
+
+    .nav.open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav ul li {
+        margin: 15px 0;
+    }
+    
+    /* Dropdown for mobile */
+    .dropdown-menu {
+        position: static; /* No absolute positioning on mobile */
+        box-shadow: none;
+        background-color: var(--light-bg); /* Slightly different background for sub-menu */
+        border-radius: 0;
+        padding: 0;
+        margin-top: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block; /* Still controlled by hover for simplicity on smaller desktop */
+    }
+    
+    /* For actual mobile toggle */
+    .dropdown-toggle.active + .dropdown-menu {
+        max-height: 200px; /* Adjust as needed for menu items */
+    }
+
+    .dropdown-menu li a {
+        padding: 10px 0;
+    }
+
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hamburger animation */
+    .hamburger.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .book-now-btn {
+        display: none; /* Hide on mobile to simplify header */
+    }
+}

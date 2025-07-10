@@ -1,0 +1,297 @@
+/* src/styles/HajjUmrahPage.css */
+
+.hajj-umrah-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1621251996765-a82f6e91f1a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; /* Default Hajj image */
+    color: var(--white-color);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hajj-umrah-hero.umrah-hero { /* Specific for Umrah page if different background needed */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1618337588329-873b22ef0f04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.hajj-umrah-hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+
+.hajj-umrah-hero p {
+    font-size: 1.3rem;
+    color: var(--white-color);
+}
+
+.package-intro {
+    background-color: var(--white-color);
+    padding: 80px 20px;
+}
+
+.package-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.package-intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--secondary-color);
+}
+
+.package-list {
+    background-color: var(--light-bg);
+    padding: 80px 20px;
+}
+
+.package-list h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.package-list h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    text-align: left;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.package-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.package-card .card-content {
+    padding: 25px;
+}
+
+.package-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--dark-bg);
+}
+
+.package-card .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.package-card h4 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.package-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.package-card ul li {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.package-card ul li::before {
+    content: '✓';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+.package-card button {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    padding: 10px 0;
+}
+.package-card button:hover {
+    background-color: #e0a800;
+}
+
+.why-choose-us {
+    background-color: var(--white-color);
+    padding: 80px 20px;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.why-choose-us h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+.feature-item {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform var(--transition-speed) ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+}
+
+.feature-item h3 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.requirements-section {
+    background-color: var(--light-bg);
+    padding: 80px 20px;
+}
+
+.requirements-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.requirements-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.requirements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.requirement-item {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.requirement-item h3 {
+    font-size: 1.5rem;
+    color: var(--dark-bg);
+    margin-bottom: 10px;
+}
+
+.requirement-item p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.requirements-section .note {
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hajj-umrah-hero h1, .package-list h2, .why-choose-us h2, .requirements-section h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hajj-umrah-hero h1 {
+        font-size: 2.8rem;
+    }
+    .hajj-umrah-hero p {
+        font-size: 1.1rem;
+    }
+    .package-list h2, .why-choose-us h2, .requirements-section h2 {
+        font-size: 2.2rem;
+    }
+    .package-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hajj-umrah-hero h1 {
+        font-size: 2.2rem;
+    }
+    .package-card h3 {
+        font-size: 1.5rem;
+    }
+    .package-card .price {
+        font-size: 1.3rem;
+    }
+    .feature-item h3 {
+        font-size: 1.4rem;
+    }
+    .requirement-item h3 {
+        font-size: 1.3rem;
+    }
+}

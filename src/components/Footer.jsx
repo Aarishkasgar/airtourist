@@ -40,7 +40,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    © {new Date().getFullYear()} AirTourist. All rights reserved. Designed by Aarish.
+                    © {new Date().getFullYear()} AirTourist. All rights reserved. Designed by Aarish Kasgar.
                 </div>
             </div>
         </footer>

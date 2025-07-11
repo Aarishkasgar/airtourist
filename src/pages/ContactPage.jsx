@@ -54,7 +54,7 @@ function ContactPage() {
                         </div>
                         <div className="info-item">
                             <h3>Phone:</h3>
-                            <p><a href="tel:+919898987878">+91 9898987878</a></p>
+                            <p><a href="tel:+917456808822">+91 7456808822</a></p>
                         </div>
                         <div className="info-item">
                             <h3>Email:</h3>
@@ -62,16 +62,16 @@ function ContactPage() {
                         </div>
                         <div className="info-item">
                             <h3>Business Hours:</h3>
-                            <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                            <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
                             <p>Sunday: Closed</p>
                         </div>
                         <div className="info-item">
                             <h3>Follow Us:</h3>
                             <div className="social-links">
-                                <a href="https://facebook.com/airtourist.india" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
-                                <a href="https://twitter.com/airtourist_ind" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-                                <a href="https://instagram.com/airtourist.official" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-                                <a href="https://wa.me/919898987878" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
+                                <a href="https://facebook.com/airtourist" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/airtourist" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+                                <a href="https://instagram.com/airtourist" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                                <a href="https://wa.me/917456808822" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>

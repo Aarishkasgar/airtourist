@@ -34,7 +34,7 @@ function Footer() {
                     <div className="footer-section contact-info">
                         <h3>Contact Us</h3>
                         <p><strong>Address:</strong> Gangaram Pura, Sarwat Gate, Muzaffarnagar, UP 251002</p>
-                        <p><strong>Phone:</strong> <a href="tel:+919898987878">+91 9898987878</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+917456808822">+91 7456808822</a></p>
                         <p><strong>Email:</strong> <a href="mailto:airtourist22@gmail.com">airtourist22@gmail.com</a></p>
                         <p><strong>CIN:</strong> U74999DL2016PTCXXXXXX</p> {/* Example CIN */}
                     </div>

@@ -64,18 +64,18 @@ function AboutPage() {
                     <h2>Meet Our Team</h2>
                     <div className="team-members">
                         <div className="team-member-card">
-                            <img src="https://images.unsplash.com/photo-1506794833959-cd602c7d9760?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 1" />
-                            <h3>Aarish Khan</h3>
+                            <img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 1" />
+                            <h3>Shakir Ayyub Qasmi</h3>
                             <p>Founder & CEO</p>
                         </div>
                         <div className="team-member-card">
-                            <img src="https://images.unsplash.com/photo-1542382257-233d267ac125?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 2" />
-                            <h3>Priya Singh</h3>
-                            <p>Head of Operations</p>
+                            <img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 2" />
+                            <h3>Aarish Kasgar</h3>
+                            <p>Head of IT</p>
                         </div>
                         <div className="team-member-card">
                             <img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 3" />
-                            <h3>Vikram Reddy</h3>
+                            <h3>M. Ibrahim</h3>
                             <p>Senior Travel Consultant</p>
                         </div>
                     </div>

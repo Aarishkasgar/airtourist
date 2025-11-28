@@ -71,7 +71,7 @@ function AboutPage() {
                         <div className="team-member-card">
                             <img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 2" />
                             <h3>Aarish Kasgar</h3>
-                            <p>Head of IT</p>
+                            <p>Head of IT & Founder of InfiTech Creatives</p>
                         </div>
                         <div className="team-member-card">
                             <img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 3" />
